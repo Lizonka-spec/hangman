@@ -1,4 +1,5 @@
 import '../styles/style.css'
+import './button-start'
 
 document.querySelector('#app').innerHTML = `
   <div>
