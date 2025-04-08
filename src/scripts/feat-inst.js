@@ -3,6 +3,7 @@
 const toggleButton = document.querySelector('.fa-brands.fa-instagram');
 const nicknameList = document.getElementById('nicknameList');
 
+export const featinst = () =>{
 
 toggleButton.addEventListener('click', function() {
 
@@ -13,6 +14,6 @@ toggleButton.addEventListener('click', function() {
     nicknameList.style.display = 'none';
   }
 });
-
+}
 nicknameList.style.display = 'none';
 
