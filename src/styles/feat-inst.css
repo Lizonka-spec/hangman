@@ -1,17 +1,29 @@
+.nickname-list{
+    display: none;
+}
+
+.nickname-list.open{
+    display: block;
+}
+
 .inst{
     text-decoration: none;
     font-size: 20px;
     color: black;
 }
+
 i{
     font-size: 40px;
 }
+
 .wrapper_feat-inst{
     position:absolute;
     width: 100px;
     height:150px;
     bottom:0px;
-    right: 50%;
+    right: 47%;
+}
 
-
+.inst:hover {
+    color: #ffcaef;
 }
