@@ -1,0 +1,54 @@
+.fullrules {
+    background-color: #f1cfe3;
+    padding: 20px;
+    border: 1px solid #161515;
+    max-width: 500px;
+    position: absolute;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.modal{
+    display: none;
+}
+
+.close {
+    color: #8c7983;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.open{
+    display: block;
+}
+
+.textrules{
+    color: black;
+}
+.button1{
+    background: #ffcaef;
+    color: black;
+    height: 50px;
+    min-width: 100px;
+    font-size: 19px;
+    border-radius: 15px;
+}
+.button1:hover{
+    background: #ffaee7;
+    font-size: 21px;
+    border: 2px black solid;
+    color: rgb(0, 0, 0);
+}
+
+.button1:focus{
+    font-size: 19px;
+}
