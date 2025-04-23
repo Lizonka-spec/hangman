@@ -1,3 +1,12 @@
 .generator{
     background: #ffcaef;
+    font-size: 23px;
+    border-radius: 15px;
+    padding: 15px;
+    min-width: 250px;
+}
+.generator:hover{
+    background: #ffaee7;
+    border: 2px black solid;
+    color: rgb(0, 0, 0);
 }
