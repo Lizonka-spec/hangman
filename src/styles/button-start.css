@@ -11,7 +11,7 @@
     font-size: 35px;
     }
     to{
-        font-size: 45px;
+        font-size: 50px;
     }
 
 }
@@ -39,6 +39,7 @@
     padding: 28px;
     font-size: 35px;
     color: black;
+    width: 250px;
 }
 
 .Start_But:hover{
