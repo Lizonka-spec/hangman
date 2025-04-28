@@ -1,0 +1,53 @@
+.section-medium{
+    display:flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+@keyframes button-animation {
+    from{
+    font-size: 35px;
+    }
+    to{
+        font-size: 45px;
+    }
+
+}
+
+.Start_But{
+    animation-name: button-animation ;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+   
+ .button{
+    display: flex;
+    text-align: center;
+    
+ }
+ 
+
+.Start_But{
+    text-decoration: none;
+    margin: 0 auto;
+    border: 2px black solid;
+    border-radius: 18px;
+    background: #ffcaef;
+    padding: 28px;
+    font-size: 35px;
+    color: black;
+}
+
+.Start_But:hover{
+    background: #ffaee7;
+    border: 2px black solid;
+    color: rgb(0, 0, 0);
+    
+}
+
+.Start_But:focus{
+    font-size: 28px;
+}
