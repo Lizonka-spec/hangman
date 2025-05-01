@@ -1,0 +1,20 @@
+.main__alphabet{
+    display: flex;
+    max-width: 26%;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.alphabet-button{
+    font-size: 20px;
+    padding: 5px;
+    min-width: 35px;
+    border: solid, black, 1px;
+    border-radius: 5px;
+    background-color: #ffedfa;
+}
+
+.alphabet-button:hover{
+    background-color: #ffcaef;
+}

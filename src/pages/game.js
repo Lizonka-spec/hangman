@@ -1,5 +1,6 @@
 import { createOptionalsElement } from '../scripts/createOptionalsElement';
 import { getRandomWord } from '../scripts/getRandomWord';
+import { createAlphabetContent } from '../scripts/createAlphabetContent'
 
 const generatorButton = document.querySelector(".generator");
 const userInput = document.querySelector(".main__user-input");
@@ -17,3 +18,5 @@ const handleGenerateNewWord = async () => {
 }
 
 generatorButton.addEventListener('click', handleGenerateNewWord)
+
+createAlphabetContent()
