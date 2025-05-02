@@ -1,0 +1,12 @@
+.UserInput-List{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    gap: 15px;
+}
+
+.main__user-input{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}

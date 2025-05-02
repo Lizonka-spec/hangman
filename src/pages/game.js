@@ -1,9 +1,22 @@
+import { createOptionalsElement } from '../scripts/createOptionalsElement';
 import { getRandomWord } from '../scripts/getRandomWord';
+import { createAlphabetContent } from '../scripts/createAlphabetContent'
 
 const generatorButton = document.querySelector(".generator");
-const wordElement = document.querySelector(".word");
+const userInput = document.querySelector(".main__user-input");
+let qustedWord = '';
 
-generatorButton.addEventListener("click", async function() {
+
+const handleGenerateNewWord = async () => {
+    userInput.innerHTML = ''
     const generatedWord = await getRandomWord();
-    wordElement.textContent = generatedWord;
-});
+    qustedWord = generatedWord;
+
+    const optionalsElememt = createOptionalsElement(generatedWord.length)
+
+    userInput.appendChild(optionalsElememt)
+}
+
+generatorButton.addEventListener('click', handleGenerateNewWord)
+
+createAlphabetContent()

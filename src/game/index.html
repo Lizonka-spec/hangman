@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mini-game HANGMAN</title>
     <link rel="stylesheet" href="../styles/style.css">
 </head>
+
 <body>
     <header>
-        <button class="generator">Получить слово</button>
+        <div class="header-content">
+            <p class>Number of attempts:</p>
+            <button class="generator">Get the word</button>
+        </div>
     </header>
-    <main>
-        <p class="word"></p>
+    <main class="main-content">
+        <section class="main__user-input"></section>
+        <section class="main__alphabet"></section>
         <script src="../pages/game.js" type="module"></script>
     </main>
 </body>
+
 </html>
