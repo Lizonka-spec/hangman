@@ -1,41 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/981df74522.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
     <title>Main Menu</title>
-    <link rel="stylesheet" href="../styles/button-start.css">
-</head>
+  </head>
 
-<body>
-    <main class="container">
-        <div class="button">
+  <body>
+    <div id="app">
+      <main class="container">
+        <section class="section-header">
+          <button class="button1">Правила</button>
+          <div class="modal" id="modal"></div>
+        </section>
+        <section class="section-medium">
+          <div class="button">
             <a class="Start_But" href="./src/game/index.html">НАЧАТЬ ИГРУ</a>
-        </div>
-    </main>
-    <div id="app"></div>
-    <script type="module" src="./src/scripts/main.js"></script>
+          </div>
+        </section>
 
-    <div class="wrapper_feat-inst">
-      
-
-      <div class="feat-inst">
-        <i class="fa-brands fa-instagram"></i>
-    
-        <div class="nickname-list" id="nicknameList">
-          <a href="https://instagram.com/vibewithrubyyy" class="inst">vibewithrubyyy</a><br>
-          <a href="https://instagram.com/your_milanaa" class="inst">your_milanaa</a><br>
-          <a href="https://instagram.com/lizonka_canfetka" class="inst">lizonka_canfetka</a><br>
-        </div>
-      </div>
-
+        <section class="section-footer">
+          <div class="wrapper_feat-inst">
+            <div class="feat-inst">
+              <i class="fa-brands fa-instagram"></i>
+              <div class="nickname-list" id="nicknameList">
+                <a href="https://instagram.com/vibewithrubyyy" class="inst"
+                  >vibewithrubyyy</a
+                ><br />
+                <a href="https://instagram.com/your_milanaa" class="inst"
+                  >your_milanaa</a
+                ><br />
+                <a href="https://instagram.com/lizonka_canfetka" class="inst"
+                  >lizonka_canfetka</a
+                ><br />
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
     </div>
-    
-    
-<script src="./src/scripts/feat-inst.js"></script>
-
-
-</body>
+    <script type="module" src="./src/pages/main.js"></script>
+  </body>
 </html>
