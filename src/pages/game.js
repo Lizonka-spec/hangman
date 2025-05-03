@@ -20,3 +20,10 @@ const handleGenerateNewWord = async () => {
 generatorButton.addEventListener('click', handleGenerateNewWord)
 
 createAlphabetContent()
+
+
+
+
+
+
+
