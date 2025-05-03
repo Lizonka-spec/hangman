@@ -1,6 +1,7 @@
 import { createOptionalsElement } from '../scripts/createOptionalsElement';
 import { getRandomWord } from '../scripts/getRandomWord';
 import { createAlphabetContent } from '../scripts/createAlphabetContent'
+import { addWrongAtteps } from '../scripts/hangmansbody';
 
 const generatorButton = document.querySelector(".generator");
 const userInput = document.querySelector(".main__user-input");
