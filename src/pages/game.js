@@ -17,6 +17,7 @@ const handleGenerateNewWord = async () => {
     userInput.appendChild(optionalsElememt)
 }
 
+
 generatorButton.addEventListener('click', handleGenerateNewWord)
 
 createAlphabetContent()

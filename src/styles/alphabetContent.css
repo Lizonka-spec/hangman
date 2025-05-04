@@ -18,3 +18,19 @@
 .alphabet-button:hover{
     background-color: #ffcaef;
 }
+
+.header__used-letters{
+    border: solid black 2px;
+    max-width: 200px;
+    max-height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding: 5px;
+}
+
+.used-box{
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}

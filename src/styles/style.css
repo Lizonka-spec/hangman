@@ -27,5 +27,14 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  gap: 100px;
+}
+
+.header-content{
+  /* display: flex;
+  justify-content: space-between; */
+}
+
+body{
+  padding: 25px;
 }
