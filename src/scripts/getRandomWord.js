@@ -1,7 +1,7 @@
 import '../styles/wordGenerator.css'
 export async function getRandomWord() {
         try {
-            const response = await fetch('https://random-word-api.herokuapp.com/word');
+            const response = await fetch('https://random-word-api.vercel.app/api?words=1');
             
             if(!response.ok){
                 throw new Error("we couldn't find the word");
