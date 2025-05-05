@@ -1,6 +1,4 @@
-import { createOptionalsElement } from '../scripts/createOptionalsElement.js';
 import { getRandomWord } from '../scripts/getRandomWord.js';
-import { createAlphabetContent } from '../scripts/createAlphabetContent.js';
 
 let maxAttempts = 7;
 let currentAttempts = maxAttempts; 
@@ -96,5 +94,3 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
-
-
