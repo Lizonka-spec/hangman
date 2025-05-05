@@ -6,6 +6,9 @@
 }
 
 .main__user-input{
+    margin: 0 0 40px 0;
+    font-size:25px;
+    font-weight: bold;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
