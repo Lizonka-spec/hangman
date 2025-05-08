@@ -1,31 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mini-game HANGMAN</title>
-    <link rel="stylesheet" href="../styles/style.css">
-</head>
+    <link rel="stylesheet" href="../styles/style.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="header-content">
-            <div>
-            <h2>Number of attempts:</h2>
-            <button class="generator">Get the word</button>
-        </div>
-            <section class="header__used-letters">
-                <h3>Used Letters:</h3>
-                <div class="used-box"></div>
-            </section>
-        </div>
+      <div class="header-content">
+        <button class="generator">Get the word</button>
+        <section class="header__used-letters">
+            <h3>Wrong letters:</h3>
+            <div class="used-box"></div>
+        </section>
+      </div>
     </header>
     <main class="main-content">
-        <section class="main__user-input"></section>
-        <section class="main__alphabet"></section>
-        <script src="../pages/game.js" type="module"></script>
+      <section class="main__user-input"></section>
+      <section class="main__alphabet"></section>
+      <script src="../pages/game.js" type="module"></script>
     </main>
-</body>
-
+  </body>
 </html>

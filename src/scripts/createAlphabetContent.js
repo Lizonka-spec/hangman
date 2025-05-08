@@ -19,11 +19,13 @@ export function createAlphabetContent() {
 
         button.addEventListener('click', function createUsedBoxContent() {
             const buttonLetter = button.textContent;
-            console.log(buttonLetter);
+            const generatedWord = localStorage.getItem('questWord');
+            // if (generatedWord.includes(buttonLetter)){
             const usedLetter = document.createElement("p")
             usedLetter.textContent = buttonLetter
             const usedBox = document.querySelector(".used-box");
             usedBox.appendChild(usedLetter)
+            // }
             button.setAttribute('disabled', '')
         })
     }
