@@ -57,34 +57,3 @@
 
 
 
-let WrongAtteps = 7;
-
-export function updateImage() {
-    let img = document.querySelector('#hangman-images');
-    let imagePath = ''; // Переменная для хранения пути к изображению
-
-    switch (WrongAtteps) {
-        case 7: imagePath = 'step0.jpg'; break;
-        case 6: imagePath = 'step1.jpg'; break;
-        case 5: imagePath = 'step2.jpg'; break;
-        case 4: imagePath = 'step3.jpg'; break;
-        case 3: imagePath = 'step4.jpg'; break;
-        case 2: imagePath = 'step5.jpg'; break;
-        case 1: imagePath = 'step6.jpg'; break;
-        default: imagePath = 'step7.jpg'; // Для WrongAtteps <= 0
-    }
-
-    img.src = imagePath;
-    document.querySelector('#attemptsCount').textContent = WrongAtteps;
-}
-
-// Обработчик клика только один раз
-document.querySelector('#attemptButton').onclick = function() {
-    if (WrongAtteps > 0) {
-        WrongAtteps--;
-        updateImage();
-    }
-};
-
-updateImage();
-

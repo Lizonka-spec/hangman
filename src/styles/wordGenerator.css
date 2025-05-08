@@ -4,6 +4,8 @@
     border-radius: 15px;
     padding: 15px;
     min-width: 250px;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
 .generator:hover{
     background: #ffaee7;
