@@ -18,6 +18,7 @@ const handleGenerateNewWord = async () => {
     localStorage.setItem('questWord', generatedWord);
 }
 
+
 generatorButton.addEventListener('click', handleGenerateNewWord);
 
 const handleGuess = (letter) => {
