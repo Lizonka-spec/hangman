@@ -9,7 +9,7 @@
 // export function updateImage() {
 //         let img = document.querySelector('#hangman-images');
 //         if (WrongAtteps >= 7) {
-//             img.src = 'step0.png';
+            img.src = '../../scripts/public/img/step0.jpg';
 //         } else if (WrongAtteps >= 6) {
 //             img.src = 'step1.jpg';
 //         } else if (WrongAtteps >= 5) {

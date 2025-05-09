@@ -2,13 +2,13 @@ import { createOptionalsElement } from '../scripts/createOptionalsElement';
 import { getRandomWord } from '../scripts/getRandomWord';
 import { createAlphabetContent } from '../scripts/createAlphabetContent';
 import { createAttemptCounter, decrementAttempts, resetAttempts } from '../scripts/attempt-counter';
-import { updateImage } from '../scripts/hangmanImageUpdater'
+
 
 
 const generatorButton = document.querySelector(".generator");
 const userInput = document.querySelector(".main__user-input");
 
-updateImage()
+
 
 createAttemptCounter();
 
