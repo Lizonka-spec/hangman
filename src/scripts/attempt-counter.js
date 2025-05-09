@@ -3,13 +3,11 @@ import { getRandomWord } from '../scripts/getRandomWord.js';
 let maxAttempts = 7;
 let currentAttempts = maxAttempts; 
 
-
 export function createAttemptCounter() {
     const counterDiv = document.createElement('div');
     counterDiv.id = 'attempt-counter';
     document.body.appendChild(counterDiv);
 }
-
 
 export function updateAttemptCounter() {
     const counterDiv = document.getElementById('attempt-counter');
@@ -18,7 +16,6 @@ export function updateAttemptCounter() {
     }
 }
 
-
 export function decrementAttempts() {
     if (currentAttempts > 0) {
         currentAttempts--;
@@ -26,17 +23,14 @@ export function decrementAttempts() {
     }
 }
 
-
 export function resetAttempts() {
     currentAttempts = maxAttempts;
     updateAttemptCounter();
 }
 
-
 export function getCurrentAttempts() {
     return currentAttempts;
 }
-
 
 getRandomWord(); 
 
@@ -60,25 +54,20 @@ const handleGuess = (letter) => {
     }
 
     guessedLetters.add(letter);
+    
     if (checkLetterInWord(letter)) {
         console.log(`Буква "${letter}" есть в слове!`);
     } else {
         console.log(`Буква "${letter}" отсутствует в слове.`);
         decrementAttempts();
+        
+        if (getCurrentAttempts() <= 0) {
+            console.log("Вы проиграли!");
+        }
     }
 };
 
-
-document.addEventListener('keydown', (event) => {
-    const letter = event.key.toUpperCase(); 
-    if (/[A-Z]/.test(letter)) { 
-        handleGuess(letter);
-    }
-});
-
-
 createAttemptCounter();
-
 
 document.addEventListener('DOMContentLoaded', () => {
     const letterButtons = document.querySelectorAll('.alphabet-button');

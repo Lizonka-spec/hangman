@@ -12,12 +12,18 @@
       <div class="header-content">
         <button class="generator">Get the word</button>
         <section class="header__used-letters">
-            <h3>Wrong letters:</h3>
-            <div class="used-box"></div>
+          <h3>Wrong letters:</h3>
+          <div class="used-box"></div>
         </section>
       </div>
     </header>
+
     <main class="main-content">
+      <!-- Убедитесь, что путь к изображению правильный -->
+      <img src="../../public/img/step0.jpg" alt="hangman" id="hangman-images" />
+      <div class="main__message"></div>
+      <!-- Исправлено: класс должен быть "message", а не "massage" -->
+      <section class="main__user-input"></section>
       <div class="main__alphabet"></div>
       <div class="user-input-container"></div>
       <script src="../pages/game.js" type="module"></script>

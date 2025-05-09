@@ -3,6 +3,7 @@ import { getRandomWord } from '../scripts/getRandomWord';
 import { createAlphabetContent } from '../scripts/createAlphabetContent';
 import { createAttemptCounter, decrementAttempts, resetAttempts } from '../scripts/attempt-counter';
 
+
 const generatorButton = document.querySelector(".generator");
 const userInput = document.querySelector(".main__user-input");
 
