@@ -1,59 +1,37 @@
+const elementImage = document.querySelector('#hangman-images'); 
 
 
-// let WrongAtteps = 0;
-// const MaxWrongAtteps = 7;
+ export function updateImage(attempts) {
+  let imageName = 'step';
 
+  switch (attempts) {
+    case 7:
+      imageName += '0';
+      break;
+    case 6:
+      imageName += '1';
+      break;
+    case 5:
+      imageName += '2';
+      break;
+    case 4:
+      imageName += '3';
+      break;
+    case 3:
+      imageName += '4';
+      break;
+    case 2:
+      imageName += '5';
+      break;
+    case 1:
+      imageName += '6';
+      break;
+    case 0:
+      imageName += '7';
+      break;
+    default:
+      
+  }
 
-// let WrongAtteps = 7;
-
-// export function updateImage() {
-//         let img = document.querySelector('#hangman-images');
-//         if (WrongAtteps >= 7) {
-            img.src = '../../scripts/public/img/step0.jpg';
-//         } else if (WrongAtteps >= 6) {
-//             img.src = 'step1.jpg';
-//         } else if (WrongAtteps >= 5) {
-//             img.src = 'step2.jpg';
-//         } else if (WrongAtteps >= 4) {
-//             img.src = 'step3.jpg';
-//         } else if (WrongAtteps >= 3) {
-//             img.src = 'step4.jpg';
-//         } else if (WrongAtteps >= 2) {
-//             img.src = 'step5.jpg';
-//         } else if (WrongAtteps >= 1) {
-//             img.src = 'step6.jpg';
-//         }
-//         else {
-//             img.src = 'step7.jpg';
-//         }
-//         document.querySelector('#attemptsCount').textContent = WrongAtteps;
-//     }
-
-//     document.querySelector('attemptButton').onclick = function() {
-//         if (WrongAtteps > 0) {
-//             WrongAtteps--;
-//             updateImage();
-//         }
-//     };
-
-//     updateImage();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  elementImage.src = `/img/${imageName}.jpg`; 
+}
