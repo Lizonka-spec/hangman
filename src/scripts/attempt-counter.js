@@ -1,4 +1,5 @@
 import { getRandomWord } from '../scripts/getRandomWord.js';
+import { updateImage } from './hangmanImageUpdater.js';
 
 let maxAttempts = 7;
 let currentAttempts = maxAttempts; 
@@ -20,6 +21,7 @@ export function decrementAttempts() {
     if (currentAttempts > 0) {
         currentAttempts--;
         updateAttemptCounter();
+        updateImage(currentAttempts);
     }
 }
 
