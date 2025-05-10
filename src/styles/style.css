@@ -15,9 +15,7 @@
   background-size: cover;
 }
 
-.section-header {
-  margin: 15px;
-}
+
 
 header {
   padding: 20px;
@@ -27,7 +25,6 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 100px;
 }
 
 body{
@@ -41,5 +38,11 @@ body{
   position: fixed; 
     top: 220px; 
   font-weight: bold;
+ }
+
+ #hangman-images{
+  top: 15px;
+  height: 470px;
+  width: 470px;
  }
  
