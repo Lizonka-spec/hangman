@@ -38,13 +38,12 @@ body{
  #attempt-counter{
   font-size: 20px;
   margin: 20px; 
-  position: fixed; 
-    top: 220px; 
+  /* position: fixed;  */
   font-weight: bold;
  }
  
 
  #hangman-images {
-  width: 500px;
+  width: 650px;
   height: 500px;
  }

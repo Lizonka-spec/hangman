@@ -35,3 +35,10 @@ const elementImage = document.querySelector('#hangman-images');
 
   elementImage.src = `/img/${imageName}.jpg`; 
 }
+
+export function hangmanImageUpdater() {
+    const imageUpdater = document.getElementById('hangman-images');
+    if (imageUpdater) {
+        imageUpdater.textContent = `Number of attempts: ${currentAttempts}`;
+    }
+}
