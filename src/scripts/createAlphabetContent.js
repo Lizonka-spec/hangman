@@ -15,6 +15,7 @@ export function createAlphabetContent() {
         const generatorButton = document.querySelector(".generator");
         generatorButton.addEventListener('click', function CleanseUsedBox() {
             usedBox.innerHTML = "";
+            button.removeAttribute('disabled', '')
         })
 
         button.addEventListener('click', function createUsedBoxContent() {
