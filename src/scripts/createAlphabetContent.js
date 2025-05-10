@@ -21,12 +21,15 @@ export function createAlphabetContent() {
         button.addEventListener('click', function createUsedBoxContent() {
             const buttonLetter = button.textContent;
             const generatedWord = localStorage.getItem('questWord');
-            // if (generatedWord.includes(buttonLetter)){
-            const usedLetter = document.createElement("p")
-            usedLetter.textContent = buttonLetter
-            const usedBox = document.querySelector(".used-box");
-            usedBox.appendChild(usedLetter)
-            // }
+            console.log(generatedWord, buttonLetter);
+
+            if (!generatedWord.includes(buttonLetter.toLowerCase())) {
+                console.log(true);
+                const usedLetter = document.createElement("p")
+                usedLetter.textContent = buttonLetter
+                const usedBox = document.querySelector(".used-box");
+                usedBox.appendChild(usedLetter)
+            }
             button.setAttribute('disabled', '')
         })
     }
