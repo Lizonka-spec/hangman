@@ -41,7 +41,7 @@ function resetHangmanImage() {
 }
 
 
-document.getElementById('generate').addEventListener('click', () => {
+document.querySelector('.generator').addEventListener('click', () => {
     getRandomWord(); 
     resetHangmanImage(); 
 });
