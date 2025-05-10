@@ -43,3 +43,8 @@ body{
   font-weight: bold;
  }
  
+
+ #hangman-images {
+  width: 500px;
+  height: 500px;
+ }
