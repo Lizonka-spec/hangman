@@ -1,6 +1,6 @@
 .main__alphabet{
     display: flex;
-    max-width: 26%;
+    max-width: 32%;
     justify-content: center;
     gap: 15px;
     flex-wrap: wrap;
