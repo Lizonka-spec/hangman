@@ -32,6 +32,5 @@ const elementImage = document.querySelector('#hangman-images');
     default:
       
   }
-
   elementImage.src = `/img/${imageName}.jpg`; 
 }
