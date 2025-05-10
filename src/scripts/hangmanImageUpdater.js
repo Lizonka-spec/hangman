@@ -1,3 +1,4 @@
+import { getRandomWord } from '../scripts/getRandomWord';
 const elementImage = document.querySelector('#hangman-images'); 
 
 
@@ -36,46 +37,13 @@ const elementImage = document.querySelector('#hangman-images');
   elementImage.src = `/img/${imageName}.jpg`; 
 }
 
+function resetHangmanImage() {
+    updateImage(7); 
+}
 
 
+document.getElementById('generate').addEventListener('click', () => {
+    getRandomWord(); 
+    resetHangmanImage(); 
+});
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-// let WrongAttempts = 7;
-
-// export function updateImage() {
-//     const img = document.querySelector('#hangman-images');
-//     const attemptsCount = document.querySelector('#attemptsCount');
-
-//     if (!img || !attemptsCount) {
-//         console.warn('Element(s) not found: #hangman-images or #attemptsCount');
-//         return;
-//     }
-
-//     let imagePath = '';
-
-//     switch (WrongAttempts) {
-//         case 7: imagePath = '../../public/img/step0.jpg'; break;
-//         case 6: imagePath = '../../public/img/step1.jpg'; break;
-//         case 5: imagePath = '../../public/img/step2.jpg'; break;
-//         case 4: imagePath = '../../public/img/step3.jpg'; break;
-//         case 3: imagePath = '../../public/img/step4.jpg'; break;
-//         case 2: imagePath = '../../public/img/step5.jpg'; break;
-//         case 1: imagePath = '../../public/img/step6.jpg'; break;
-//         default: imagePath = '../../public/img/step7.jpg';
-//     }
-
-//     img.src = imagePath;
-//     attemptsCount.textContent = WrongAttempts;
-// }
