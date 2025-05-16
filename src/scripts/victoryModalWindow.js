@@ -1,12 +1,13 @@
-import '../styles/victoryModalWindow.css';
-import { createAttemptCounter } from './attempt-counter';
+import '../styles/victoryModalWindow.css'
 
-export function onWordGyuessed () {
-  if(createAttemptCounter > 0) {
-    showModal('vy otgadali slovo');
-  } else {
-    showModal('u vas zakochikis popytki');
-  }
+ export function showVictoryModal() {
+    const modal = document.createElement('div');
+    modal.className = 'victory-modal';
+
+    modal.querySelector('.close-modal').addEventListener('click', () => {
+        modal.remove();
+    });
+
+    document.body.appendChild(modal);
 }
-
-onWordGyuessed();
+showVictoryModal();
