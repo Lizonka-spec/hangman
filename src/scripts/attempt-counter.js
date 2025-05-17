@@ -7,7 +7,9 @@ let currentAttempts = maxAttempts;
 export function createAttemptCounter() {
     const counterDiv = document.createElement('div');
     counterDiv.id = 'attempt-counter';
-    document.body.appendChild(counterDiv);
+    const headerContent = document.querySelector('.header-content');
+    headerContent.appendChild(counterDiv);
+
 }
 
 export function updateAttemptCounter() {

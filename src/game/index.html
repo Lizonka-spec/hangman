@@ -1,24 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mini-game HANGMAN</title>
     <link rel="stylesheet" href="../styles/style.css" />
-</head>
+  </head>
 
-<body>
-    <header>
+  <body>
+    <div class="container__game">
+      <aside>
         <div class="header-content">
-            <button class="generator">Get the word</button>
-            <section class="header__used-letters">
-                <h3>Wrong letters:</h3>
-                <div class="used-box"></div>
-            </section>
+          <button class="generator">Get the word</button>
+          <section class="header__used-letters">
+            <h3>Wrong letters:</h3>
+            <div class="used-box"></div>
+          </section>
         </div>
+      </aside>
+
+      <main class="main-content">
         <section class="header-img">
-            <img src="../../public/img/step0.jpg" alt="hangman" id="hangman-images" />
+          <img
+            src="../../public/img/step0.jpg"
+            alt="hangman"
+            id="hangman-images"
+          />
         </section>
     </header>
 
@@ -26,8 +33,8 @@
         <section class="main__user-input"></section>
         <div class="main__alphabet"></div>
         <div class="user-input-container"></div>
-        <script src="../pages/game.js" type="module"></script>
-    </main>
-</body>
-
+      </main>
+    </div>
+    <script src="../pages/game.js" type="module"></script>
+  </body>
 </html>

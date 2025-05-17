@@ -15,11 +15,15 @@
   background-size: cover;
 }
 
+.container__game{
+  display: flex;
+}
+
 .section-header {
   margin: 15px;
 }
 
-header {
+aside {
   padding: 20px;
   display: flex;
   justify-content: space-between;
@@ -32,30 +36,26 @@ header {
 }
 
 .header-img{
-  width: 65%;
+  margin: 0 auto;
 }
 
 .main-content {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 body{
   padding: 25px;
 }
 
-
  #attempt-counter{
   font-size: 20px;
-  margin: 20px; 
-  position: fixed; 
-    top: 220px; 
   font-weight: bold;
  }
- 
 
  #hangman-images {
-  width: 500px;
+  width: 100%;
+  max-width: 650px  ;
   height: 500px;
+
  }
