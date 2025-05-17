@@ -1,9 +1,14 @@
 import { getRandomWord } from './getRandomWord.js';
 import { updateImage } from './hangmanImageUpdater.js';
+import { createModalContent } from './modalLose.js';
+
 
 let maxAttempts = 7;
-let currentAttempts = maxAttempts; 
-const headerContent = document.querySelector(".header-content")
+let currentAttempts = maxAttempts;
+const modalLose = document.querySelector('.modal');
+const gameOverModal = document.getElementById('gameOverModal');
+
+
 export function createAttemptCounter() {
     const counterDiv = document.createElement('div');
     counterDiv.id = 'attempt-counter';
@@ -64,7 +69,19 @@ const handleGuess = (letter) => {
         decrementAttempts();
         
         if (getCurrentAttempts() <= 0) {
-            console.log("Вы проиграли!");
+            // console.log("Вы проиграли!");
+            modalLose.classList.add('open');
+            createModalContent(`
+                <p class="modal-text">You lose:(</p>
+                <button id="restartGame">TRY AGAIN</button>    
+            `)
+
+            const restartButton = document.getElementById('restartGame');
+
+            restartButton.addEventListener('click',() => {
+                gameOverModal.style.display = 'none';
+                location.reload(); 
+            });
         }
     }
 };
