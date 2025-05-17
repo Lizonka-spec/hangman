@@ -1,15 +1,13 @@
-import { getRandomWord } from '../scripts/getRandomWord.js';
+import { getRandomWord } from './getRandomWord.js';
 import { updateImage } from './hangmanImageUpdater.js';
 
 let maxAttempts = 7;
 let currentAttempts = maxAttempts; 
-
+const headerContent = document.querySelector(".header-content")
 export function createAttemptCounter() {
     const counterDiv = document.createElement('div');
     counterDiv.id = 'attempt-counter';
-    const headerContent = document.querySelector('.header-content');
     headerContent.appendChild(counterDiv);
-
 }
 
 export function updateAttemptCounter() {

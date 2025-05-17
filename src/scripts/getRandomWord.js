@@ -1,4 +1,3 @@
-import '../styles/wordGenerator.css'
 export async function getRandomWord() {
         try {
             const response = await fetch('https://random-word-api.vercel.app/api?words=1');

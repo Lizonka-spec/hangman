@@ -1,14 +1,14 @@
 import { createOptionalsElement } from '../scripts/createOptionalsElement';
 import { getRandomWord } from '../scripts/getRandomWord';
 import { createAlphabetContent } from '../scripts/createAlphabetContent';
-import { createAttemptCounter, decrementAttempts, resetAttempts } from '../scripts/attempt-counter';
+import { createAttemptCounter, decrementAttempts, resetAttempts } from '../scripts/attemptCounter';
 import { findAllIndexes } from '../scripts/insertCorrectLetters'
+
+import '../styles/wordGenerator.css'
 
 
 const generatorButton = document.querySelector(".generator");
 const userInput = document.querySelector(".main__user-input");
-
-
 
 createAttemptCounter();
 

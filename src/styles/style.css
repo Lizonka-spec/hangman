@@ -40,12 +40,9 @@ aside {
 }
 
 .main-content {
+  padding: 25px;
   display: flex;
   flex-direction: column;
-}
-
-body{
-  padding: 25px;
 }
 
  #attempt-counter{
@@ -57,5 +54,14 @@ body{
   width: 100%;
   max-width: 650px  ;
   height: 500px;
+  border: solid rgb(255, 187, 198) 1px;
+
+ }
+
+ .container__game{
+  height: 100vh;
+  width: 100vw;  
+  background-image: url("../../public/img/BackgroundGame.jpg");
+  background-repeat: repeat;
 
  }
