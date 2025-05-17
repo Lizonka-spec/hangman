@@ -1,15 +1,16 @@
 import { getRandomWord } from '../scripts/getRandomWord.js';
 import { updateImage } from './hangmanImageUpdater.js';
 
-
 let maxAttempts = 7;
 let currentAttempts = maxAttempts; 
+// localStorage.setItem('currentAttempts',maxAttempts );
 
 export function createAttemptCounter() {
     const counterDiv = document.createElement('div');
     counterDiv.id = 'attempt-counter';
     const headerContent = document.querySelector('.header-content');
     headerContent.appendChild(counterDiv);
+
 }
 
 export function updateAttemptCounter() {
@@ -44,12 +45,12 @@ export function checkLetterInWord(letter) {
     if (!generatedWord) {
         console.error("Загаданное слово не найдено в localStorage.");
         return false;
-    }    return generatedWord.toLowerCase().includes(letter.toLowerCase());
+    }
+
+    return generatedWord.toLowerCase().includes(letter.toLowerCase());
 }
 
 let guessedLetters = new Set(); 
-
- showVictoryModal() 
 
 const handleGuess = (letter) => {
     if (guessedLetters.has(letter)) {
@@ -61,22 +62,12 @@ const handleGuess = (letter) => {
     
     if (checkLetterInWord(letter)) {
         console.log(`Буква "${letter}" есть в слове!`);
-
-        // Проверяем, угаданы ли все буквы
-        const generatedWord = localStorage.getItem('questWord');
-        const allLettersGuessed = [...generatedWord].every(letter => guessedLetters.has(letter.toLowerCase()));
-
-        if (allLettersGuessed) {
-            showVictoryModal(); // Вызываем модальное окно о победе
-            console.log("Вы выиграли!");
-        }
     } else {
         console.log(`Буква "${letter}" отсутствует в слове.`);
         decrementAttempts();
         
         if (getCurrentAttempts() <= 0) {
             console.log("Вы проиграли!");
-            // Здесь можно добавить логику для отображения сообщения о поражении
         }
     }
 };

@@ -2,7 +2,9 @@ import { createOptionalsElement } from '../scripts/createOptionalsElement';
 import { getRandomWord } from '../scripts/getRandomWord';
 import { createAlphabetContent } from '../scripts/createAlphabetContent';
 import { createAttemptCounter, decrementAttempts, resetAttempts } from '../scripts/attempt-counter';
-import {showVictoryModal} from '../scripts/victoryModalWindow'; 
+import { showVictoryModal, showWinModal}from '../scripts/victoryModalWindow';
+
+
 
 
 
@@ -39,3 +41,7 @@ const handleGuess = (letter) => {
 }
 createAlphabetContent(handleGuess);
 
+showVictoryModal();
+
+
+showWinModal();
