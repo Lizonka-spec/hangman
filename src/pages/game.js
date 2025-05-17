@@ -2,7 +2,7 @@ import { createOptionalsElement } from '../scripts/createOptionalsElement';
 import { getRandomWord } from '../scripts/getRandomWord';
 import { createAlphabetContent } from '../scripts/createAlphabetContent';
 import { createAttemptCounter, decrementAttempts, resetAttempts } from '../scripts/attempt-counter';
-
+import { findAllIndexes } from '../scripts/insertCorrectLetters'
 
 
 const generatorButton = document.querySelector(".generator");
