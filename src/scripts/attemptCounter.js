@@ -7,7 +7,7 @@ let maxAttempts = 7;
 let currentAttempts = maxAttempts;
 const modalLose = document.querySelector('.modal');
 const gameOverModal = document.getElementById('gameOverModal');
-
+const headerContent = document.querySelector(".header-content")
 
 export function createAttemptCounter() {
     const counterDiv = document.createElement('div');
@@ -69,7 +69,6 @@ const handleGuess = (letter) => {
         decrementAttempts();
         
         if (getCurrentAttempts() <= 0) {
-            // console.log("Вы проиграли!");
             modalLose.classList.add('open');
             createModalContent(`
                 <p class="modal-text">You lose:(</p>

@@ -35,7 +35,6 @@ const handleGuess = (letter) => {
         decrementAttempts();
 
         if (attemps <= 0) {
-            // Показываем модальное окно проигрыша
             showGameOver();
         }
     }
