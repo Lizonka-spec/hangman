@@ -18,7 +18,7 @@ export function createAlphabetContent() {
             button.removeAttribute('disabled', '')
         })
 
-        button.addEventListener('click', function createUsedBoxContent() {
+        function createUsedBoxContent() {
             const buttonLetter = button.textContent;
             const generatedWord = localStorage.getItem('questWord');
             console.log(generatedWord, buttonLetter);
@@ -31,6 +31,8 @@ export function createAlphabetContent() {
                 usedBox.appendChild(usedLetter)
             }
             button.setAttribute('disabled', '')
-        })
+        }
+
+        button.addEventListener('click', createUsedBoxContent)
     }
 }

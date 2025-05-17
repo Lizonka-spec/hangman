@@ -6,7 +6,6 @@
     <title>Mini-game HANGMAN</title>
     <link rel="stylesheet" href="../styles/style.css" />
   </head>
-
   <body>
     <div class="container__game">
       <aside>
@@ -20,6 +19,9 @@
       </aside>
 
       <main class="main-content">
+        <div id="gameOverModal" class="modal">
+          <div class="modal-content"></div>
+        </div>
         <section class="header-img">
           <img
             src="../../public/img/step0.jpg"
@@ -27,11 +29,15 @@
             id="hangman-images"
           />
         </section>
+
         <section class="main__user-input"></section>
+
         <div class="main__alphabet"></div>
+
         <div class="user-input-container"></div>
       </main>
     </div>
+
     <script src="../pages/game.js" type="module"></script>
   </body>
 </html>

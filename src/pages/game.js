@@ -1,14 +1,12 @@
 import { createOptionalsElement } from '../scripts/createOptionalsElement';
 import { getRandomWord } from '../scripts/getRandomWord';
 import { createAlphabetContent } from '../scripts/createAlphabetContent';
-import { createAttemptCounter, decrementAttempts, resetAttempts } from '../scripts/attempt-counter';
+import { createAttemptCounter, decrementAttempts, getCurrentAttempts, resetAttempts } from '../scripts/attempt-counter';
 
-
+import{ showGameOver }  from '../scripts/modalLose';
 
 const generatorButton = document.querySelector(".generator");
 const userInput = document.querySelector(".main__user-input");
-
-
 
 createAttemptCounter();
 
@@ -27,14 +25,17 @@ generatorButton.addEventListener('click', handleGenerateNewWord);
 
 const handleGuess = (letter) => {
     const letterLower = letter.toLowerCase();
+    const attemps = getCurrentAttempts();
+    
 
     if (!qustedWord.includes(letterLower)) {
         decrementAttempts();
 
-        if (getCurrentAttempts() <= 0) {
-            messageDiv.textContent = "You Lose :(";
+        if (attemps <= 0) {
+            // Показываем модальное окно проигрыша
+            showGameOver();
         }
-    } else {
     }
 }
+
 createAlphabetContent(handleGuess);
