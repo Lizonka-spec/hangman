@@ -1,3 +1,4 @@
+import { getRandomWord } from '../scripts/getRandomWord';
 const elementImage = document.querySelector('#hangman-images'); 
 
 
@@ -34,3 +35,14 @@ const elementImage = document.querySelector('#hangman-images');
   }
   elementImage.src = `/img/${imageName}.jpg`; 
 }
+
+function resetHangmanImage() {
+    updateImage(7); 
+}
+
+
+document.querySelector('.generator').addEventListener('click', () => {
+    getRandomWord(); 
+    resetHangmanImage(); 
+});
+
