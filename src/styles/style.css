@@ -17,6 +17,7 @@
 
 .container__game{
   display: flex;
+  background-image: url("../../public/img/BackgroundGame.jpg");
 }
 
 .section-header {
@@ -54,6 +55,7 @@ aside {
   width: 100%;
   max-width: 650px  ;
   height: 500px;
+  border: solid 2px rgb(255, 174, 174);
  }
 
  .modal {
