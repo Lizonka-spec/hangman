@@ -1,4 +1,4 @@
-import { showWinModal } from './modalWin';
+import { showWinModal } from './modalWin.js';
 
 export function findAllIndexes(generatedWord, buttonLetter) {
     if (typeof generatedWord !== 'string' || typeof buttonLetter !== 'string') {
@@ -33,3 +33,5 @@ export function setWriteLetterIntoLi(buttonLetter, generatedWord) {
     });
         showWinModal()
 }
+
+

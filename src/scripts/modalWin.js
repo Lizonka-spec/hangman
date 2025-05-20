@@ -9,21 +9,25 @@ export function showGameWin() {
     modal.style.display = 'flex';
 }
 
-export function showWinModal() {
-    const liElements = document.querySelectorAll('ul li');
-    // Проверяем, есть ли элементы li вообще
-    if (liElements.length === 0) {
-        console.warn("Нет элементов <li> для проверки победы.");
-        return; // Выходим из функции, если нет элементов
-    }
 
-    // Проверяем, все ли элементы li содержат не черточки
+
+export function showWinModal(generatedWordLength) {  
+    const liElements = document.querySelectorAll('ul li');
     const allLettersGuessed = Array.from(liElements).every(li => li.textContent !== '_');
 
-    if (allLettersGuessed) {
-        showGameWin(); // Показываем модальное окно победы
+    if (AllLettersGuessed & Array.from(liElements).length === generatedWordLength) {
+            modalWin.classList.add('open');
+            createModalContent(`
+                <p class="modal-text">You Win(</p>
+                <button id="restartGame">TRY AGAIN</button>    
+            `)       
     }
 }
+
+
+
+
+
 
 
 
