@@ -42,7 +42,5 @@ const handleGuess = (letter) => {
 
 createAlphabetContent(handleGuess);
 
-showVictoryModal();
 
-
-showWinModal();
+findAllIndexes();
