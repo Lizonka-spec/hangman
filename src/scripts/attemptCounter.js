@@ -1,6 +1,8 @@
+import { createModalContent } from './createModal.js';
 import { getRandomWord } from './getRandomWord.js';
 import { updateImage } from './hangmanImageUpdater.js';
-import { createModalContent } from './modalLose.js';
+
+
 
 
 let maxAttempts = 7;
@@ -55,15 +57,12 @@ export function checkLetterInWord(letter) {
 let guessedLetters = new Set(); 
 
 const handleGuess = (letter) => {
-    if (guessedLetters.has(letter)) {
-        console.log(`Вы уже пробовали букву "${letter}".`);
-        return; 
-    }
-
     guessedLetters.add(letter);
     
     if (checkLetterInWord(letter)) {
         console.log(`Буква "${letter}" есть в слове!`);
+
+
     } else {
         console.log(`Буква "${letter}" отсутствует в слове.`);
         decrementAttempts();

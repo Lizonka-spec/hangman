@@ -1,5 +1,3 @@
-import { showWinModal } from './modalWin.js';
-
 export function findAllIndexes(generatedWord, buttonLetter) {
     if (typeof generatedWord !== 'string' || typeof buttonLetter !== 'string') {
         console.warn("findAllIndexes: generatedWord or buttonLetter is not a string or is null.");
@@ -31,7 +29,8 @@ export function setWriteLetterIntoLi(buttonLetter, generatedWord) {
             liElements[index].textContent = buttonLetter;
         }
     });
-        showWinModal()
+    showWinModal(generatedWord.length);
+
 }
 
 
