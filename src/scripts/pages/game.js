@@ -1,12 +1,10 @@
-import { createOptionalsElement } from '../scripts/createOptionalsElement';
-import { getRandomWord } from '../scripts/getRandomWord';
-import { createAlphabetContent } from '../scripts/createAlphabetContent';
-import { createAttemptCounter, decrementAttempts, getCurrentAttempts, resetAttempts } from '../scripts/attemptCounter';
-import { findAllIndexes } from '../scripts/insertCorrectLetters'
+import { createOptionalsElement } from '../createOptionalsElement';
+import { getRandomWord } from '../getRandomWord';
+import { createAlphabetContent } from '../createAlphabetContent';
+import { createAttemptCounter, decrementAttempts, getCurrentAttempts, resetAttempts } from '../attemptCounter';
+import { findAllIndexes } from '../insertCorrectLetters';
 
-import '../styles/wordGenerator.css'
-
-import{ showGameOver }  from '../scripts/modalLose';
+import '../../styles/wordGenerator.css'
 
 const generatorButton = document.querySelector(".generator");
 const userInput = document.querySelector(".main__user-input");
@@ -21,7 +19,8 @@ const handleGenerateNewWord = async () => {
     userInput.appendChild(optionalsElememt);
 
     localStorage.setItem('questWord', generatedWord);
-}
+    console.log(generatedWord);
+};
 
 
 generatorButton.addEventListener('click', handleGenerateNewWord);
@@ -41,3 +40,4 @@ const handleGuess = (letter) => {
 }
 
 createAlphabetContent(handleGuess);
+findAllIndexes();
