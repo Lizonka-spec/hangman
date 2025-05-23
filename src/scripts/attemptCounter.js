@@ -1,6 +1,7 @@
 import { createModalContent } from './createModal.js';
 import { getRandomWord } from './getRandomWord.js';
 import { updateImage } from './hangmanImageUpdater.js';
+// import {showModal} from './modalWin.js'
 
 
 
@@ -61,7 +62,7 @@ const handleGuess = (letter) => {
     
     if (checkLetterInWord(letter)) {
         console.log(`Буква "${letter}" есть в слове!`);
-
+    // showModal();
 
     } else {
         console.log(`Буква "${letter}" отсутствует в слове.`);

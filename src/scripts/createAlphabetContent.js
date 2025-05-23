@@ -1,4 +1,6 @@
 import '../styles/alphabetContent.css'
+// import {showModal} from './modalWin.js'
+
 
 import { setWriteLetterIntoLi } from './insertCorrectLetters.js';
 
@@ -50,7 +52,6 @@ export function handleGuess(generatedWord, buttonLetter, button) {
         console.error("Не найден элемент с классом '.used-box'!");
         return;
     }
-
     if (typeof generatedWord === 'string' && typeof buttonLetter === 'string') {
         if (!generatedWord.toLowerCase().includes(buttonLetter.toLowerCase())) {
             console.log(true);
@@ -60,8 +61,11 @@ export function handleGuess(generatedWord, buttonLetter, button) {
             usedBox.appendChild(usedLetter);
         } else {
             setWriteLetterIntoLi(buttonLetter, generatedWord);
-        }
+        }     
     } else {
         console.warn("generatedWord or buttonLetter is not a string or is null.");
     }
+
+
+// showModal();
 }
