@@ -10,14 +10,17 @@
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
-  background-image: url("../img/background.jpg");
+  background-image: url("../../public/img/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.container__game{
+.container__game {
+  height: 100vh;
+  width: 100vw;
   display: flex;
   background-image: url("../../public/img/BackgroundGame.jpg");
+  background-size: contain;
 }
 
 .section-header {
@@ -30,13 +33,13 @@ aside {
   justify-content: space-between;
 }
 
-.header-content{
+.header-content {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.header-img{
+.header-img {
   margin: 0 auto;
 }
 
@@ -46,31 +49,31 @@ aside {
   flex-direction: column;
 }
 
- #attempt-counter{
+#attempt-counter {
   font-size: 20px;
   font-weight: bold;
- }
+}
 
- #hangman-images {
+#hangman-images {
   width: 100%;
-  max-width: 650px  ;
+  max-width: 650px;
   height: 500px;
   border: solid 2px rgb(255, 174, 174);
- }
+}
 
- .modal {
+.modal {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   display: none;
   align-items: center;
   justify-content: center;
 }
 
-.modal.open{
+.modal.open {
   display: flex;
 }
 
@@ -82,11 +85,13 @@ aside {
   width: 400px;
   height: 200px;
 }
-.modal-text{
+
+.modal-text {
   font-size: 30px;
-  margin:20px ;
+  margin: 20px;
 }
-#restartGame{
+
+#restartGame {
   background: #ffcaef;
   font-size: 23px;
   border-radius: 15px;

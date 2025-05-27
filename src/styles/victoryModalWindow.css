@@ -25,32 +25,3 @@
 .close-modal{
     margin-top: 20px;
 }
-
-
-/* 
- .victory-modal{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0%;
-    left: 0%;
-    width: 100vw;
-    height: 100vh;
-    color: black;
-    font-size: 24px;
-    z-index: 1000;
-    display: none;
-}  */
-/* .victory-modal__text{
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.2);
-} */
-
-
-
-
-
-
-

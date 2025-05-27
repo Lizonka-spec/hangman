@@ -51,9 +51,8 @@ export function checkLetterInWord(letter) {
   return generatedWord.toLowerCase().includes(letter.toLowerCase());
 }
 
-let guessedLetters = new Set();
-
 const handleGuess = (letter) => {
+  let guessedLetters = new Set();
   guessedLetters.add(letter);
 
   if (checkLetterInWord(letter)) {
