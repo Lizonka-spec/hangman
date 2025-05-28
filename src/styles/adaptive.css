@@ -1,0 +1,44 @@
+@media screen and (max-width: 1024px) {
+    .main__alphabet {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main__alphabet {
+        width: 51%;
+    }
+
+    .header-content {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .container__game {
+        flex-direction: column;
+    }
+
+    #hangman-images {
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .alphabet-button {
+        min-width: 30px;
+        height: 30px;
+    }
+
+    .main__alphabet {
+        width: 95%;
+    }
+
+    .header-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .generator {
+        margin-bottom: 0;
+    }
+}

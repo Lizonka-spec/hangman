@@ -1,4 +1,5 @@
 import '../styles/alphabetContent.css'
+import '../styles/wrongLetters.css'
 
 import { setWriteLetterIntoLi } from './insertCorrectLetters.js';
 

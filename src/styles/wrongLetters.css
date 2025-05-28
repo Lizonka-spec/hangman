@@ -1,0 +1,10 @@
+.header__used-letters{
+    border: solid black 2px;
+    max-width: 200px;
+    max-height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding: 10px;
+    border-radius: 15px;
+}

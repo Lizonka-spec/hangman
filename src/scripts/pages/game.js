@@ -5,6 +5,7 @@ import { createAttemptCounter, resetAttempts } from '../attemptCounter';
 import { findAllIndexes } from '../insertCorrectLetters';
 
 import '../../styles/wordGenerator.css';
+import '../../styles/adaptive.css'
 
 const generatorButton = document.querySelector('.generator');
 const userInput = document.querySelector('.main__user-input');

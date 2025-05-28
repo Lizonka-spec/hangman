@@ -57,7 +57,7 @@ aside {
 #hangman-images {
   width: 100%;
   max-width: 650px;
-  height: 500px;
+  height: auto;
   border: solid 2px rgb(255, 174, 174);
 }
 
